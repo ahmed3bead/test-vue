@@ -11,7 +11,7 @@
     "build:icons": "tsx src/plugins/iconify/build-icons.js",
     "msw:init": "msw init public/ --save",
     "postinstall": "npm run build:icons && npm run msw:init",
-    "build:digitalocean": "npm install --force --production=false && npm run build && npm ci"
+    "build:digitalocean": "npm install --legacy-peer-deps --production=false && npm run build && npm ci"
   },
   "dependencies": {
     "@casl/ability": "6.7.0",
